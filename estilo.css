@@ -1,0 +1,99 @@
+@import"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap";
+
+.hamburger {
+    display: none
+}
+
+#header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 5rem;
+    background-color: #0e0d10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh
+}
+
+#header .logo {
+    border-radius: 50%;
+    width: 250px
+}
+
+#header #navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+#header #navigation a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffffbf;
+    font-size: 1.1rem;
+    transition: all .4s ease-in-out 0s
+}
+
+#header #navigation a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #7972e1;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s
+}
+
+#header #navigation a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+#header #navigation a:hover {
+    color: #7972e1
+}
+
+@media (max-width: 1400px) {
+    #header .logo {
+        width: 150px
+    }
+}
+
+@media (max-width: 430px) {
+    #header {
+        padding: 2rem
+    }
+
+    #header .logo {
+        width: 150px
+    }
+
+    #header #navigation {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: -1000%;
+        gap: .5rem;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+        background-color: #0e0d10;
+        padding: 1.5rem 0
+    }
+
+    .x,
+    .hamburger {
+        width: 60px;
+        display: block;
+        transition: .5s
+    }
+}
+
