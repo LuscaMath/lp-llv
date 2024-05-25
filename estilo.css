@@ -1101,7 +1101,7 @@ body {
 
 @media (max-width: 481px) {
     .sobre-text p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         width: 70%;
         margin-bottom: 1rem;
     }
