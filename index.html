@@ -18,9 +18,10 @@
         <img class="logo" src="./imagens/logo.png" alt="">
         <nav id="navigation">
             <a href="#">Home</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </nav>
         <img id="menu-hamburger" class="hamburger" src="./imagens/hamburger.svg" alt="">
         <label class="theme-switch">
@@ -72,7 +73,7 @@
             <img src="./imagens/doutora.png" alt="Foto da doutora Laís com os braços cruzados">
         </div>
     </section>
-    <section class="especialidades">
+    <section class="especialidades" id="servicos">
         <div class="imagem-especialidade">
             <h1><span class="clear-text">Nossas</span> Especialidades</h1>
             <img src="./imagens/Remove-bg.ai_1716603584945.png"
@@ -80,30 +81,38 @@
         </div>
         <div class="especialidades-items">
             <div class="especialidades-item">
-                <h3>Enxaqueca</h3>
+                <div class="espec-icon">
+                    <img src="./imagens/brain-svgrepo-com.svg" alt="">
+                    <h3>Enxaqueca</h3>
+                </div>
                 <p>A enxaqueca é uma dor de cabeça intensa, frequentemente acompanhada de náuseas e sensibilidade à luz
                     e ao som. Comum entre mulheres, pode ser desencadeada por estresse, certos alimentos e mudanças
                     hormonais. O tratamento inclui medicamentos e ajustes no estilo de vida para evitar gatilhos.
                 </p>
             </div>
             <div class="especialidades-item">
-                <h3>Toxina botulínica
-                </h3>
+                <div class="espec-icon">
+                    <img src="./imagens/syringe-svgrepo-com.svg" alt="">
+                    <h3>Toxina botulínica
+                    </h3>
+                </div>
                 <p>A toxina botulínica, ou Botox, é usada para tratar enxaqueca crônica. Ela relaxa os músculos e
                     bloqueia sinais nervosos, ajudando a reduzir a frequência e a intensidade das crises. Os efeitos
                     duram de três a seis meses.
                 </p>
             </div>
             <div class="especialidades-item">
-                <h3>Acupuntura
-                </h3>
+                <div class="espec-icon">
+                    <img src="./imagens/needle.svg" alt="">
+                    <h3>Acupuntura</h3>
+                </div>
                 <p>A acupuntura, parte da medicina tradicional chinesa, usa agulhas finas em pontos específicos do corpo
                     para tratar condições como dor crônica e enxaqueca, promovendo a cura natural e o bem-estar.
                 </p>
             </div>
         </div>
     </section>
-    <section class="diferenciais">
+    <section class="diferenciais" id="diferenciais">
         <div class="dif-top">
             <div class="dif-top-item">
                 <img class="dif-top-img" src="./imagens/dif-img1.jpg" alt="">
@@ -138,10 +147,11 @@
                 <h3>Convênios</h3>
                 <p>Temos uma grande cartela de convênios para melhor lhe atender.
                 </p>
+                <a class="dif-button" href="">Lista</a>
             </div>
         </div>
     </section>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="sobre-img">
             <img src="./imagens/sobre-img.jpg" alt="">
         </div>
@@ -155,27 +165,28 @@
     </section>
     <footer class="footer">
         <div class="top-part-footer">
-            <div class="maps">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.647490015329!2d-48.068346384627205!3d-15.822530789033758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3327481783bd%3A0x8c9f0e69868d60b!2sPrime%20Excel%C3%AAncia%20M%C3%A9dica!5e0!3m2!1spt-BR!2sbr!4v1674240040084!5m2!1spt-BR!2sbr"
-                width="100%" height="500px" style="border: 0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <div class="img-footer">
+                <img class="footer-logo" src="./imagens/logo.png" alt="">
             </div>
-            <div class="footer-infos">
-                <h4>Venha cuidar da sua saúde!</h4>
-                <div class="footer-info-item">
-                    <i class="fa-brands fa-whatsapp"></i>                    
-                    <p>(61)90344-2122</p>
+            <div class="infos-footer">
+                <div class="socials-footer">
+                    <h3 class="socials-title">Siga-nos:</h3>
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-instagram insta-ico"></i>
+                        <i class="fa-brands fa-tiktok tik-ico"></i>
+                    </div>
                 </div>
-                <div class="footer-info-item">
-                    <i class="fa-brands fa-instagram"></i>                    
-                    <p>@doutoralais</p>
+                <div class="socials-footer">
+                    <h3 class="socials-title">Como chegar:</h3>
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-waze waze-ico"></i>
+                        <i class="fa-solid fa-location-dot loc-ico"></i>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottom-part-footer">
-            <p>Copyright © LLV 2024 | Desenvolvido por <a href="">L.L.A</a></p>
+            <p>Copyright © LVV 2024 | Desenvolvido por <a href="">L.L.A</a></p>
         </div>
     </footer>
     <script src="script.js"></script>

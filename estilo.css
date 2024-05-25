@@ -19,7 +19,7 @@ body {
     --p-color: #ffffff;
     --p-d-color: #000000;
     --a-color: #000000;
-    --second-collor: #536766;
+    --second-collor: #141414;
 }
 
 /*Header*/
@@ -540,6 +540,12 @@ body {
 }
 
 @media (max-width: 1367px) {
+    .espec-icon img {
+        width: 40px;
+    }
+    .theme-switch {
+        --toggle-size: 13px;
+    }
     .text-content h2 {
         font-size: 2.8rem;
     }
@@ -557,6 +563,10 @@ body {
 }
 
 @media (max-width: 1025px) {
+
+    .espec-icon {
+        justify-content: center;
+    }
 
     .theme-switch {
         --toggle-size: 15px;
@@ -639,6 +649,9 @@ body {
 }
 
 @media (max-width: 481px) {
+    .espec-icon img {
+        width: 30px;
+    }
     .theme-switch {
         --toggle-size: 11px;
     }
@@ -692,19 +705,26 @@ body {
     border-radius: 1rem;
 }
 
+.espec-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .clear-text {
     font-weight: 300;
 }
 
 .especialidades-items {
     width: 40%;
+    margin-top: 3rem;
 }
 
 .especialidades-item {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 1.2rem;
+    margin-top: 1rem;
 }
 
 .especialidades-item h3 {
@@ -739,7 +759,7 @@ body {
     .especialidades-item h3 {
         font-size: 1.5rem;
     }
-    
+
     .especialidades-item p {
         font-size: 0.8rem;
     }
@@ -749,7 +769,7 @@ body {
     .especialidades-item h3 {
         font-size: 1.3rem;
     }
-    
+
     .especialidades-item p {
         font-size: 0.7rem;
     }
@@ -767,11 +787,12 @@ body {
     .imagem-especialidade h1 {
         font-size: 2.7rem;
     }
+
     .especialidades-items {
         text-align: center;
         width: 100%;
-        margin: 0;  
-    }   
+        margin: 0;
+    }
 
     .especialidades-item p {
         margin: 0 auto;
@@ -787,10 +808,12 @@ body {
     .imagem-especialidade img {
         width: 70%;
     }
+
     .especialidades-item p {
         width: 70%;
         font-size: 0.6rem;
     }
+
     .wpp-fixed img {
         width: 40px;
     }
@@ -804,10 +827,12 @@ body {
     .imagem-especialidade img {
         width: 80%;
     }
+
     .especialidades-item p {
         width: 60%;
         font-size: 0.5rem;
     }
+
     .wpp-fixed img {
         width: 30px;
     }
@@ -817,9 +842,11 @@ body {
     .imagem-especialidade h1 {
         font-size: 1.8rem;
     }
+
     .imagem-especialidade img {
         width: 100%;
     }
+
     .especialidades-item p {
         width: 80%;
         font-size: 0.5rem;
@@ -915,25 +942,33 @@ body {
     font-weight: 200;
     width: 80%;
     font-size: 0.9rem;
-    color:var(--p-color);
+    color: var(--p-color);
     text-align: center;
 }
 
 .dif-icons {
     color: var(--sub-title-color);
-    font-size: 4rem;
+    font-size: 50px;
 }
-    
+
+.dif-button {
+    background-color: var(--main-collor);
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    color: var(--p-color);
+    border-radius: 5px;
+}
+
 
 @media (max-width: 1367px) {
     .dif-text h3 {
         font-size: 2.5rem;
     }
-    
+
     .dif-text p {
         font-size: 0.8rem;
     }
-    
+
     .diff-btn {
         padding: 0.4rem 1.8rem;
     }
@@ -942,12 +977,12 @@ body {
         font-size: 1.2rem;
         text-align: center;
     }
-    
+
     .dif-bottom-item p {
         font-weight: 200;
         width: 80%;
         font-size: 0.86rem;
-        color:var(--p-color);
+        color: var(--p-color);
         text-align: center;
     }
 }
@@ -962,9 +997,11 @@ body {
     .dif-top-item {
         width: 100%;
     }
+
     .dif-text {
         padding: 5rem;
     }
+
     .dif-bottom-item {
         padding: 1rem;
         width: 100%;
@@ -976,6 +1013,7 @@ body {
     .dif-text {
         padding: 2.5rem;
     }
+
     .dif-text h3 {
         font-size: 1.5rem;
         text-align: center;
@@ -985,6 +1023,7 @@ body {
         font-size: 0.7rem;
         text-align: center;
     }
+
     .diff-btn {
         font-size: 0.8rem;
         padding: 0.1rem 0.8rem;
@@ -993,11 +1032,11 @@ body {
     .dif-bottom-item h3 {
         font-size: 1.2rem;
     }
-    
+
     .dif-bottom-item p {
         font-size: 0.7rem;
     }
-    
+
     .dif-icons {
         font-size: 3rem;
     }
@@ -1009,8 +1048,8 @@ body {
     .dif-bottom-item h3 {
         font-size: 1rem;
     }
-    
-    .dif-bottom-item p {    
+
+    .dif-bottom-item p {
         width: 100%;
         font-size: 0.75rem;
     }
@@ -1051,7 +1090,7 @@ body {
 }
 
 .sobre-text-btn {
-    text-decoration: none;  
+    text-decoration: none;
     padding: 0.5rem 2rem;
     background-color: var(--main-collor);
     color: var(--p-color);
@@ -1083,6 +1122,7 @@ body {
     .sobre {
         padding: 0;
     }
+
     .sobre-img {
         width: 100%;
     }
@@ -1120,10 +1160,12 @@ body {
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
+
     .sobre-text p {
         margin-bottom: 0.5rem;
         font-size: 0.55rem;
     }
+
     .sobre-text-btn {
         font-size: 60%;
         padding: 0.2rem 1.1rem;
@@ -1134,53 +1176,101 @@ body {
 
 .footer {
     padding: 2rem 0 0 0;
-    background-color: var(--second-collor);
+    background-color: #141414;
     width: 100%;
+}
+
+.footer-logo {
+    width: 150px;
 }
 
 .top-part-footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 2rem;
 }
 
-.maps {
-    width: 70%;
-}
-
-.footer-infos {
-    margin: 0 auto;
+.socials-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 1em;
 }
 
-.footer-infos h4 {
-    color: var(--p-color);
-    font-size: 2.3rem;
-}
-
-
-.footer-info-item {
+.footer-icon {
     display: flex;
-    align-items: center;
-    gap: 0.7rem;
+    gap: 0.5rem;
+}
+
+
+.insta-ico {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.insta-ico:hover {
+    background-color: #E1306C;
+}
+
+
+.tik-ico {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.tik-ico:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.waze-ico {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.waze-ico:hover {
+    background-color: #09D7FE;
+    color: #000000;
+}
+
+.loc-ico {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.loc-ico:hover {
+    background-color: #e84436;
+}
+
+.socials-footer .socials-title {
     color: var(--p-color);
-}
-
-.footer-info-item i {
-    font-size: 2rem;
-}
-
-.footer-info-item p {
-    font-size: 0.9rem;
 }
 
 .bottom-part-footer {
     padding: 2rem;
-    background-color: #000000;
+    background-color: #000;
     text-align: center;
 }
 
@@ -1192,52 +1282,65 @@ body {
     color: var(--sub-title-color);
 }
 
-@media (max-width: 1025px) {
-    .maps {
-        padding: 2rem;
-        width: 100%;
-    }
-
-    .footer-infos {
-        width: 100%;
-        justify-content: center;
+@media (max-width: 769px) {
+    .img-footer {
+        display: flex;
         align-items: center;
-        text-align: center;
-        padding: 0 0 2rem 0;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .img-footer .footer-logo {
+        width: 60%;
+    }
+    .bottom-part-footer p {
+        font-size: 0.6rem;
+    }
+    .top-part-footer img {
+        width: 20%;
+    }
+    .insta-ico {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .tik-ico {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .waze-ico {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .loc-ico {
+        font-size: 1rem;
+        padding: 0.8rem;
     }
 }
 
 @media (max-width: 481px) {
-    .maps {
-        padding: 1rem;
+    .top-part-footer img {
+        width: 25%;
     }
-    .maps iframe {
-        height: fit-content;
-    }
-
-    .footer-infos {
-        padding: 0 0 1rem 0;
-    }
-
-    .footer-infos h4 {
-        font-size: 1.5rem;
-    }
-
-    .footer-info-item i {
-        font-size: 1.5rem;
+    .insta-ico {
+        font-size: 0.7rem;
+        padding: 0.5rem;
     }
     
-    .footer-info-item p {
+    .tik-ico {
         font-size: 0.7rem;
+        padding: 0.5rem;
     }
-
-    .bottom-part-footer p {
-        font-size: 0.6rem;
+    .waze-ico {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    
+    .loc-ico {
+        font-size: 0.7rem;
+        padding: 0.5rem;
     }
 }
-
-
-
-
 
 

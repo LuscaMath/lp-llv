@@ -19,7 +19,7 @@ toggle.addEventListener('click', ()=> {
         root.style.setProperty('--p-d-color', '#000000')
         root.style.setProperty('--main-collor', '#2994D1')
         root.style.setProperty('--sub-title-color', '#2994D1')
-        root.style.setProperty('--title-color', '#cccccc')
+        root.style.setProperty('--title-color', '#2c2c2c')
         body.dataset.theme = 'light'
     }
 })
@@ -45,6 +45,6 @@ document.querySelectorAll('#navigation a').forEach(n => {
         mobile_menu.setAttribute('style', 'top: -1000%');
         menu_hamburger.classList.remove('x')
         menu_hamburger.classList.add('hamburger')
-        menu_hamburger.setAttribute('src', 'assets/hamburger-f6f90966.svg')
+        menu_hamburger.setAttribute('src', 'imagens/hamburger.svg')
     })
 })
