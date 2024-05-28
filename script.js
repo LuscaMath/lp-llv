@@ -4,7 +4,24 @@ const root = document.querySelector(':root')
 const body = document.querySelector('body')
 const toggle = document.querySelector('#theme-switch')
 
-toggle.addEventListener('click', ()=> {
+window.addEventListener('load', function () {
+    const infoBalloon = document.getElementById('info-balloon');
+    infoBalloon.classList.remove('hidden');
+    infoBalloon.classList.add('show');
+
+    // Esconde o balão informativo após 5 segundos
+    setTimeout(function () {
+        infoBalloon.classList.remove('show');
+        // Opcional: remove o balão completamente após a transição de opacidade
+        setTimeout(function () {
+            infoBalloon.classList.add('hidden');
+        }, 500); // tempo igual à duração da transição de opacidade
+    }, 5000); // tempo em milissegundos
+});
+
+
+
+toggle.addEventListener('click', () => {
     if (body.dataset.theme === 'light') {
         root.style.setProperty('--bg-color', '#000000')
         root.style.setProperty('--a-color', '#fffafa')
@@ -48,3 +65,4 @@ document.querySelectorAll('#navigation a').forEach(n => {
         menu_hamburger.setAttribute('src', 'imagens/hamburger.svg')
     })
 })
+
