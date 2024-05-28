@@ -7,8 +7,8 @@ const toggle = document.querySelector('#theme-switch')
 toggle.addEventListener('click', ()=> {
     if (body.dataset.theme === 'light') {
         root.style.setProperty('--bg-color', '#000000')
-        root.style.setProperty('--a-color', '#ffffff')
-        root.style.setProperty('--p-d-color', '#ffffff')
+        root.style.setProperty('--a-color', '#fffafa')
+        root.style.setProperty('--p-d-color', '#fffafa')
         root.style.setProperty('--main-collor', '#2b4360')
         root.style.setProperty('--sub-title-color', '#cccccc')
         root.style.setProperty('--title-color', '#cccccc')

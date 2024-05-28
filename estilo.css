@@ -16,7 +16,7 @@ body {
     --main-collor: #2994D1;
     --title-color: #2c2c2c;
     --sub-title-color: #2994D1;
-    --p-color: #ffffff;
+    --p-color: #fffafa;
     --p-d-color: #000000;
     --a-color: #000000;
     --second-collor: #141414;
@@ -595,7 +595,7 @@ body {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 771px) {
     .theme-switch {
         --toggle-size: 13px;
     }
@@ -776,35 +776,47 @@ body {
 }
 
 @media (max-width: 1025px) {
+    .especialidades {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
     .imagem-especialidade {
         width: 50%;
         margin: 0 0 2rem 0;
-        text-align: center;
         gap: 1rem;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .espec-icon {
+        justify-content: flex-start;
     }
 
     .imagem-especialidade h1 {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 
     .especialidades-items {
-        text-align: center;
+        text-align: justify;
         width: 100%;
         margin: 0;
     }
 
+    .especialidades-items h3 {
+        font-size: 1.5rem;
+    }
+
     .especialidades-item p {
-        margin: 0 auto;
-        text-align: center;
+        width: 80%;
+        text-align: justify;
     }
 
     .wpp-fixed img {
-        width: 50px;
+        width: 60px;
     }
 }
 
 @media (max-width: 770px) {
+
     .imagem-especialidade img {
         width: 70%;
     }
@@ -825,20 +837,20 @@ body {
     }
 
     .imagem-especialidade img {
-        width: 80%;
+        width: 90%;
     }
 
     .especialidades-item p {
-        width: 60%;
-        font-size: 0.5rem;
+        width: 80%;
+        font-size: 0.6rem;
     }
 
     .wpp-fixed img {
-        width: 30px;
+        width: 40px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .imagem-especialidade h1 {
         font-size: 1.8rem;
     }
@@ -847,9 +859,13 @@ body {
         width: 100%;
     }
 
+    .especialidades-item h3 {
+        font-size: 1.1rem;
+    }
+
     .especialidades-item p {
-        width: 80%;
-        font-size: 0.5rem;
+        width: 90%;
+        font-size: 0.55rem;
     }
 }
 
@@ -1282,7 +1298,7 @@ body {
     color: var(--sub-title-color);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 770px) {
     .img-footer {
         display: flex;
         align-items: center;
@@ -1291,7 +1307,7 @@ body {
         margin-bottom: 2rem;
     }
     .img-footer .footer-logo {
-        width: 60%;
+        width: 30%;
     }
     .bottom-part-footer p {
         font-size: 0.6rem;
