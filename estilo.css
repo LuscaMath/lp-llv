@@ -96,7 +96,14 @@ body {
 }
 
 @media (max-width: 321px) {
-   
+    #info-balloon {
+        right: 15px;
+        top: 100px;
+    }   
+    #info-balloon::after {
+        display: none;
+    }
+    
 }
 
 /*Header*/
