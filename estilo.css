@@ -93,13 +93,11 @@ body {
     #info-balloon {
         right: 15px;
         top: 100px;
-    }   
+    }  
     #info-balloon::after {
         display: none;
     }
 }
-
-/*Header*/
 .hamburger {
     display: none;
 }
