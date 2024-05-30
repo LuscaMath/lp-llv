@@ -22,31 +22,37 @@ body {
     --second-collor: #141414;
 }
 
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 #info-balloon {
     position: fixed;
-    top: 20px;
-    right: 200px;
-    background-color: var(--main-collor);
+    max-width: 150px;
+    padding: 15px;
+    font-size: 70%;
+    text-align: center;
+    background-color: #333; 
     color: #fff;
-    padding: 10px 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--second-collor);
     opacity: 0;
     transition: opacity 0.5s;
-    z-index: 1000;
-    max-width: 250px;
+    z-index: 1000;;
+    right: 200px;
 }
 
 #info-balloon::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: -10px;  /* Positioning the arrow to the right */
     transform: translateY(-50%);
-    border-width: 10px;
+    border-width: 10px;  /* Size of the arrow */
     border-style: solid;
-    border-color: transparent transparent transparent var(--p-color);
-    padding-right: 0.5rem;
+    border-color: transparent transparent transparent #fff;  /* Arrow pointing right */
 }
 
 #info-balloon.show {
@@ -57,109 +63,40 @@ body {
     display: none;
 }
 
-@media (max-width: 1761px) {
-    #info-balloon {
-        top: 30px;
-        right: 200px;
-        max-width: 250px;
-    }
-}
-
+/* Media query for smaller screens */
 @media (max-width: 1367px) {
     #info-balloon {
-        top: 30px;
-        right: 160px;
-        max-width: 250px;
-    }
-}
-
-@media (max-width: 1281px) {
-    #info-balloon {
-        top: 30px;
-        right: 160px;
-        max-width: 220px;
+        right: 180px;
     }
 }
 
 @media (max-width: 1025px) {
     #info-balloon {
-        top: 110px;
-        right: 45px;
-        max-width: 150px;
-        padding: 5px 15px;
-        font-size: 70%;
-        text-align: center;
+        max-width: 100px;
+        padding: 6px;
+        font-size: 50%;
     }
 
-
     #info-balloon::after {
-        display: none;
+        right: -10px;  /* Positioning the arrow to the right */
+        border-width: 7px;  /* Size of the arrow */
     }
 }
 
 @media (max-width: 769px) {
     #info-balloon {
-        top: 50px;
         right: 120px;
-        max-width: 150px;
-        padding: 5px 15px;
-        font-size: 70%;
-        text-align: center;
-    }
-
-    #info-balloon::after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -10px;
-        transform: translateY(-50%);
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent transparent transparent var(--p-color);
-        padding-right: 0.1rem;
     }
 }
 
 @media (max-width: 481px) {
     #info-balloon {
-        top: 60px;
-        right: 110px;
-        max-width: 90px;
-        padding: 2px 7px;
-        font-size: 70%;
-        text-align: center;
-        font-size: 45%;
+        right: 100px;
     }
-
-    #info-balloon::after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -5px;
-        transform: translateY(-50%);
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent transparent var(--p-color); 
-        margin-right: -3px;
-    }
-    
 }
 
-@media (max-width: 320px) {
-    #info-balloon {
-        top: 110px;
-        right: 20px;
-        max-width: 90px;
-        padding: 2px 7px;
-        font-size: 70%;
-        text-align: center;
-        font-size: 45%;
-    }
-    #info-balloon::after {
-        display: none;
-    }
+@media (max-width: 321px) {
+   
 }
 
 /*Header*/
