@@ -40,6 +40,9 @@ toggle.addEventListener('click', () => {
         root.style.setProperty('--sub-title-color', '#cccccc')
         root.style.setProperty('--title-color', '#cccccc')
         root.style.setProperty('--pop-up-color', '#141414')
+        document.querySelector('.brain').setAttribute('src', 'imagens/brain-dark.svg')
+        document.querySelector('.syringe').setAttribute('src', 'imagens/syringe-dark.svg')
+        document.querySelector('.needle').setAttribute('src', 'imagens/needle-dark.svg')
         body.dataset.theme = 'dark'
     } else {
         root.style.setProperty('--bg-color', '#ffffff')
@@ -49,6 +52,9 @@ toggle.addEventListener('click', () => {
         root.style.setProperty('--sub-title-color', '#2994D1')
         root.style.setProperty('--title-color', '#2c2c2c')
         root.style.setProperty('--pop-up-color', '#ffffff')
+        document.querySelector('.brain').setAttribute('src', 'imagens/brain.svg')
+        document.querySelector('.syringe').setAttribute('src', 'imagens/syringe.svg')
+        document.querySelector('.needle').setAttribute('src', 'imagens/needle.svg')
         body.dataset.theme = 'light'
     }
 })
