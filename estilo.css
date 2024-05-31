@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb:hover {
         right: -10px;
         /* Positioning the arrow to the right */
         border-width: 7px;
-        /* Size of the arrow */
+        /* Size of the arrow */ 
     }
 }
 
@@ -265,8 +265,11 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     #info-balloon {
+        max-width: 100px;
+        font-size: 35%;
+        padding: 10px;
         right: 15px;
-        top: 90px;
+        top: 105px;
     }
 
     #info-balloon::after {
@@ -276,7 +279,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 420px) {
     #info-balloon {
-        top: 75px;
+        top: 105px;
     }
 }
 
@@ -902,6 +905,14 @@ body::-webkit-scrollbar-thumb:hover {
         height: 20px;
         font-size: 0.9rem;
     }
+
+    .wpp-fixed img {
+        width: 40px;
+    }
+    
+    .maps {
+        height: 150px;
+    }
 }
 
 @media (max-width: 481px) {
@@ -1091,7 +1102,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
-@media (max-width: 481px) {
+@media (max-width: 520px) {
     .especialidades  {
         padding: 0.5rem;
     }
