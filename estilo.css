@@ -269,7 +269,7 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 35%;
         padding: 10px;
         right: 15px;
-        top: 105px;
+        top: 90px;
     }
 
     #info-balloon::after {
@@ -279,7 +279,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 420px) {
     #info-balloon {
-        top: 105px;
+        top: 72px;
     }
 }
 
