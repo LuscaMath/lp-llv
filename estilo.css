@@ -11,6 +11,142 @@ body {
     background-color: var(--bg-color);
 }
 
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-collor);
+    border-radius: 10px;
+    border: 3px solid #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-collor);
+}
+
+/*PopUp*/
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: var(--pop-up-color);
+    padding: 20px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--sub-title-color);
+}
+
+.popup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.popup ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    color: var(--p-d-color);
+}
+
+.close-btn {
+    background-color: var(--main-collor);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn:hover {
+    background-color: var(--main-collor);
+    transform: scale(1.05);
+}
+
+.close-btn:focus {
+    outline: none;
+}
+
+/* Responsividade */    
+@media (max-width: 600px) {
+    .popup {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-popup {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .popup h2 {
+        font-size: 20px;
+    }
+
+    .popup ul li {
+        font-size: 16px;
+    }
+
+    .close-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Estilização da barra de rolagem */
+.popup::-webkit-scrollbar {
+    width: 12px;
+}
+
+.popup::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.popup::-webkit-scrollbar-thumb {
+    background-color: var(--main-collor);
+    border-radius: 10px;
+    border: 3px solid #f0f0f0;
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-collor);
+}
+
+/*Root*/
+
 :root {
     --bg-color: #ffffff;
     --main-collor: #2994D1;
@@ -19,7 +155,8 @@ body {
     --p-color: #fffafa;
     --p-d-color: #000000;
     --a-color: #000000;
-    --second-collor: #141414;
+    --second-collor: #141414;    
+    --pop-up-color: #ffffff;
 }
 
 .switch-container {
@@ -586,7 +723,7 @@ body {
 
 .text-content p {
     color: var(--p-color);
-    font-size: 1.05rem;
+    font-size: 1rem;
     text-align: justify;
 }
 

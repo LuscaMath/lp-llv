@@ -13,7 +13,58 @@
 <body data-theme="light">
     <a class="wpp-fixed"
         href="https://api.whatsapp.com/send/?phone=5561998766077&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0"
-        target="_blank"><img src="./imagens/whatsapp.png" alt=""></a>
+        target="_blank"><img src="./imagens/whatsapp.png" alt="">
+    </a>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Convênios Aceitos</h2>
+            <ul>
+                <li>AFEB BRASAL</li>
+                <li>AFFEGO</li>
+                <li>ASETE (ASTE)</li>
+                <li>BACEN</li>
+                <li>CAEME - GO</li>
+                <li>CAESAN</li>
+                <li>CARE PLUS</li>
+                <li>CASEC (CODEVASF)</li>
+                <li>CASEMBRAPA (EMBRAPA)</li>
+                <li>CNTI</li>
+                <li>CONAB</li>
+                <li>EMBRATEL (TELOS)</li>
+                <li>EVIDA (ELETRONORTE)</li>
+                <li>FAPES (BNDES)</li>
+                <li>FASCAL</li>
+                <li>GAMA SAÚDE</li>
+                <li>GDF SAÚDE</li>
+                <li>GRAVIA</li>
+                <li>LIFE EMPRESARIAL</li>
+                <li>NOTRE DAME</li>
+                <li>OMINT SAÚDE</li>
+                <li>PF SAÚDE (POLÍCIA FEDERAL)</li>
+                <li>PLAN ASSISTE (MPU)</li>
+                <li>PLAS/JMU (STM)</li>
+                <li>POSTAL SAÚDE (ECT)</li>
+                <li>PROASA</li>
+                <li>PRÓ-SAÚDE (CÂMARA DOS DEPUTADOS)</li>
+                <li>PRÓ-SAÚDE (TJDFT)</li>
+                <li>PRÓ-SER (STJ)</li>
+                <li>PRÓ-SOCIAL (TRF)</li>
+                <li>REAL GRANDEZA (DEMAIS PLANOS)</li>
+                <li>REAL GRANDEZA (SALVUS E SALUTEM)</li>
+                <li>SAÚDE CAIXA</li>
+                <li>SAÚDE PETROBRAS</li>
+                <li>SERPRO</li>
+                <li>SIS SENADO</li>
+                <li>STF-MED (STF)</li>
+                <li>TRE SAÚDE</li>
+                <li>TRT SAÚDE</li>
+                <li>TST SAÚDE</li>
+                <li>UNAFISCO (SINDIFISCO)</li>
+            </ul>
+            <button class="close-btn" onclick="hidePopup()">Fechar</button>
+        </div>
+    </div>
 
     <header id="header">
         <img class="logo" src="./imagens/logo.png" alt="">
@@ -143,22 +194,24 @@
                 <h3>Referência em enxaqueca</h3>
                 <p>A LVV é referência em Dores de cabeça e enxaqueca desde sua inauguração.
                 </p>
+                <a class="dif-button" href="">Saiba Mais</a>
             </div>
             <div class="dif-bottom-item">
                 <i class="fa-solid fa-house-medical dif-icons"></i>
                 <h3>Tudo em um só lugar</h3>
                 <p>Sem precisar de deslocamento extra, você faz tudo em um só lugar.
                 </p>
+                <a class="dif-button" href="">Saiba Mais</a>
             </div>
             <div class="dif-bottom-item">
                 <i class="fa-solid fa-book-medical dif-icons"></i>
                 <h3>Convênios</h3>
                 <p>Temos uma grande cartela de convênios para melhor lhe atender.
                 </p>
-                <a class="dif-button" href="">Lista</a>
+                <button class="dif-button"  onclick="showPopup()">Lista</button>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="sobre" id="sobre">
         <div class="sobre-img">
             <img src="./imagens/sobre-img.jpg" alt="">

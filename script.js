@@ -4,6 +4,16 @@ const root = document.querySelector(':root')
 const body = document.querySelector('body')
 const toggle = document.querySelector('#theme-switch')
 
+function showPopup() {
+    document.getElementById('popupOverlay').style.display = 'flex';
+    body.style.overflowY = 'hidden'
+}
+
+function hidePopup() {
+    document.getElementById('popupOverlay').style.display = 'none';
+    body.style.overflowY = 'auto'
+}
+
 window.addEventListener('load', function () {
     const infoBalloon = document.getElementById('info-balloon');
     infoBalloon.classList.remove('hidden');
@@ -29,6 +39,7 @@ toggle.addEventListener('click', () => {
         root.style.setProperty('--main-collor', '#2b4360')
         root.style.setProperty('--sub-title-color', '#cccccc')
         root.style.setProperty('--title-color', '#cccccc')
+        root.style.setProperty('--pop-up-color', '#141414')
         body.dataset.theme = 'dark'
     } else {
         root.style.setProperty('--bg-color', '#ffffff')
@@ -37,6 +48,7 @@ toggle.addEventListener('click', () => {
         root.style.setProperty('--main-collor', '#2994D1')
         root.style.setProperty('--sub-title-color', '#2994D1')
         root.style.setProperty('--title-color', '#2c2c2c')
+        root.style.setProperty('--pop-up-color', '#ffffff')
         body.dataset.theme = 'light'
     }
 })
