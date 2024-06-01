@@ -226,6 +226,13 @@ body::-webkit-scrollbar-thumb:hover {
     display: none;
 }
 
+@media (max-width: 830px) {
+    #info-balloon {
+        top: 110px;
+    }
+
+}
+
 @media (max-width: 600px) {
     #info-balloon {
         top: 88px;
