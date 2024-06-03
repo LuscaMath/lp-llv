@@ -3,6 +3,7 @@ const mobile_menu = document.getElementById('navigation')
 const root = document.querySelector(':root')
 const body = document.querySelector('body')
 const toggle = document.querySelector('#theme-switch')
+const difBtn = document.querySelectorAll('.dif-buttons')
 
 function showPopup() {
     document.getElementById('popupOverlay').style.display = 'flex';
@@ -13,6 +14,12 @@ function hidePopup() {
     document.getElementById('popupOverlay').style.display = 'none';
     body.style.overflowY = 'auto'
 }
+
+difBtn.forEach(element => {
+    element.addEventListener('click', ()=>{
+        window.open("https://api.whatsapp.com/send/?phone=5561998766077&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0");
+    })
+});
 
 window.addEventListener('load', function () {
     const infoBalloon = document.getElementById('info-balloon');
